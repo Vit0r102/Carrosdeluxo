@@ -394,6 +394,83 @@ body {
   background-color: hsl(210, 60%, 50%);
   color: white;
 }
+/* =======================
+   ESTILOS DA SEÇÃO DE CONTATO
+   ======================== */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #f4f4f4; /* Um fundo claro para destacar a seção */
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.contact-container {
+    max-width: 800px; /* Define uma largura máxima para o conteúdo */
+    margin: 0 auto;  /* Centraliza o container */
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem; /* 40px */
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.contact-container p {
+    font-size: 1.125rem; /* 18px */
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Estilo unificado para inputs e textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #333; /* Pode alterar para a cor primária do seu site */
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite que o usuário redimensione verticalmente */
+    min-height: 130px;
+}
+
+/* Faz o botão do formulário ocupar 100% da largura */
+.contact-form .btn {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.1rem;
+}
 
 .favorite-btn {
   position: absolute;
@@ -407,7 +484,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   transition: var(--transition-luxury);
 }
@@ -766,4 +843,4 @@ body {
   .hero-subtitle {
     font-size: 1rem;
   }
-}ss
+}
